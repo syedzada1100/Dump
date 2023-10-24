@@ -6,10 +6,10 @@ except:
 import requests
 bit = platform.architecture()[0]
 if bit == '64bit':
-    from Dump import main
+    from dump import main
     main()
 elif bit == '32bit':
-    from Dump32 import main
+    from dump32 import main
     main()
 else:
     print('\n YOUR DEVICE IS NOT SUPPORT THIS TOOL')
